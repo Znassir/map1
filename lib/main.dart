@@ -182,16 +182,7 @@ class HomeScreen extends StatelessWidget {
                       )
                     ],
                   ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                    child: Image(
-                        image: AssetImage(
-                          "Asset/images/General-location-map-Google-Maps-2010.png",
-                        ),
-                        height: 100,
-                        width: 50,
-                        fit: BoxFit.cover),
-                  ),
+
                 ],
               ),
             ],
