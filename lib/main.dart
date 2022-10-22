@@ -42,10 +42,6 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
-
-
-
-
                 children: [
                   Container(
                     height: 178,
@@ -58,9 +54,6 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.orange,
                         borderRadius: BorderRadius.circular(16)),
                   ),
-
-
-
                   SizedBox(
                     width: 34,
                   ),
@@ -79,7 +72,6 @@ class HomeScreen extends StatelessWidget {
                             fontSize: 34,
                             color: Colors.green),
                       ),
-
                       Row(
                         children: [
                           CustomIconStyle(
@@ -100,21 +92,21 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
               SizedBox(
-                height: 32,
+                height: 30,
               ),
               Text(
                 "About",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
               ),
               SizedBox(
                 height: 8,
               ),
               Text(
-                "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
+                "is a song by American rapper Eminem from his second album The Slim Shady LP (1999). It is also the opening song and lead single of the album. The song samples British singer Labi Siffre's 1975 track as a bass and guitar riff by British pop rock duo Chas & Dave. The song was ranked at #26 on s 100 Greatest Songs of the '90s",
                 style: TextStyle(
                     fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.grey),
+                    fontWeight: FontWeight.w500,
+                    color: Colors.black),
               ),
               SizedBox(
                 height: 64,
@@ -144,7 +136,7 @@ class HomeScreen extends StatelessWidget {
                                 width: 200,
                               ),
                               Text(
-                                ".afaj \ ak;ajl \ aksd",
+                                "Robert Robertson, 1234 .",
                                 style: TextStyle(color: Colors.grey),
                               )
                             ],
@@ -173,7 +165,7 @@ class HomeScreen extends StatelessWidget {
                                 width: 200,
                               ),
                               Text(
-                                ".afajak \ lsAc \ lksd",
+                                "Robert Robertson, 1234 .",
                                 style: TextStyle(color: Colors.grey),
                               )
                             ],
@@ -182,7 +174,6 @@ class HomeScreen extends StatelessWidget {
                       )
                     ],
                   ),
-
                 ],
               ),
             ],
