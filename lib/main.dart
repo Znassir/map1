@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                     height: 178,
                     width: 128,
                     child: Image(
-                      image: AssetImage("Asset/images/AS.png"),
+                      image: AssetImage("Assets/images/C:\Users\USER\AndroidStudioProjects\MAP1\Asset\download1.png"),
                       fit: BoxFit.contain,
                     ),
                     decoration: BoxDecoration(
@@ -61,15 +61,15 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Dr.Ziad Nassir",
+                        "Eng.Ziad Nassir",
                         style: TextStyle(
                             fontSize: 24, fontWeight: FontWeight.w500),
                       ),
                       Text(
-                        "Haert sp.",
+                        "Software Devoloper",
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
-                            fontSize: 34,
+                            fontSize: 18,
                             color: Colors.green),
                       ),
                       Row(
