@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                     height: 178,
                     width: 128,
                     child: Image(
-                      image: AssetImage("Assets/images/C:\Users\USER\AndroidStudioProjects\MAP1\Asset\download1.png"),
+                      image: AssetImage("Asset/img/blank.webp"),
                       fit: BoxFit.contain,
                     ),
                     decoration: BoxDecoration(
