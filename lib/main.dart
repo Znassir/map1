@@ -111,7 +111,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 64,
               ),
-              Row(
+              Row(mainAxisAlignment:MainAxisAlignment.start,
                 children: [
                   Column(
                     children: [
@@ -167,11 +167,64 @@ class HomeScreen extends StatelessWidget {
                               Text(
                                 "Robert Robertson, 1234 .",
                                 style: TextStyle(color: Colors.grey),
-                              )
+                              ),
+                              SizedBox(
+                                width: 34,
+                                height: 20,
+                              ),
                             ],
                           )
                         ],
-                      )
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Container(
+                            height: 60,
+                            width: 180,
+                            child: TextButton(
+                              style: ButtonStyle(
+                                foregroundColor:
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.blue),
+                              ),
+                              onPressed: () {},
+                              child: Text(
+                                'About us',
+                                style: TextStyle(fontSize: 33,color: Colors.white
+                                ),
+                              ),
+                            ),
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                                borderRadius: BorderRadius.circular(50)),
+                          ),
+                          Container(
+                            height: 60,
+                            width: 180,
+                            child: TextButton(
+                              style: ButtonStyle(
+                                foregroundColor:
+                                MaterialStateProperty.all<Color>(
+                                    Colors.blue),
+                              ),
+                              onPressed: () {},
+                              child: Text(
+                                'Address',
+                                style: TextStyle(fontSize: 33,color: Colors.white
+                                ),
+                              ),
+                            ),
+                            decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(50)),
+                          ),
+                        ],
+
+                      ),
+
+
+
                     ],
                   ),
                 ],
