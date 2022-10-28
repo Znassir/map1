@@ -54,7 +54,7 @@ class HomeScreen extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                     decoration: BoxDecoration(
-                        color: Colors.orange,
+                        color: Colors.cyan,
                         borderRadius: BorderRadius.circular(16)),
                   ),
                   SizedBox(
@@ -73,7 +73,7 @@ class HomeScreen extends StatelessWidget {
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 18,
-                            color: Colors.green),
+                            color: Colors.black87),
                       ),
                       Row(
                         children: [
@@ -105,7 +105,7 @@ class HomeScreen extends StatelessWidget {
                 height: 8,
               ),
               Text(
-                "is a song by American rapper Eminem from his second album The Slim Shady LP (1999). It is also the opening song and lead single of the album. The song samples British singer Labi Siffre's 1975 track as a bass and guitar riff by British pop rock duo Chas & Dave. The song was ranked at #26 on s 100 Greatest Songs of the '90s",
+                "Programming is the process of creating a set of instructions that tell a computer how to perform a task.",
                 style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,
@@ -141,7 +141,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Text(
                                 "Robert Robertson, 1234 .",
-                                style: TextStyle(color: Colors.grey),
+                                style: TextStyle(color: Colors.blue),
                               )
                             ],
                           )
@@ -170,7 +170,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Text(
                                 "Robert Robertson, 1234 .",
-                                style: TextStyle(color: Colors.grey),
+                                style: TextStyle(color: Colors.blue),
                               ),
                               SizedBox(
                                 width: 34,
@@ -249,12 +249,12 @@ class CustomIconStyle extends StatelessWidget {
     return Container(
         child: Icon(
           icon,
-          color: Colors.orange,
+          color: Colors.white,
           size: 32,
         ),
         height: 36,
         width: 50,
         decoration: BoxDecoration(
-            color: Colors.red, borderRadius: BorderRadius.circular(16)));
+            color: Colors.cyan, borderRadius: BorderRadius.circular(30)));
   }
 }
