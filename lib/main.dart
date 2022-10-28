@@ -35,6 +35,9 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Online Programmer'),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16),
@@ -111,7 +114,8 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 64,
               ),
-              Row(mainAxisAlignment:MainAxisAlignment.start,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Column(
                     children: [
@@ -191,12 +195,12 @@ class HomeScreen extends StatelessWidget {
                               onPressed: () {},
                               child: Text(
                                 'About us',
-                                style: TextStyle(fontSize: 33,color: Colors.white
-                                ),
+                                style: TextStyle(
+                                    fontSize: 33, color: Colors.white),
                               ),
                             ),
                             decoration: BoxDecoration(
-                              color: Colors.blue,
+                                color: Colors.blue,
                                 borderRadius: BorderRadius.circular(50)),
                           ),
                           Container(
@@ -205,14 +209,14 @@ class HomeScreen extends StatelessWidget {
                             child: TextButton(
                               style: ButtonStyle(
                                 foregroundColor:
-                                MaterialStateProperty.all<Color>(
-                                    Colors.blue),
+                                    MaterialStateProperty.all<Color>(
+                                        Colors.blue),
                               ),
                               onPressed: () {},
                               child: Text(
                                 'Address',
-                                style: TextStyle(fontSize: 33,color: Colors.white
-                                ),
+                                style: TextStyle(
+                                    fontSize: 33, color: Colors.white),
                               ),
                             ),
                             decoration: BoxDecoration(
@@ -220,11 +224,7 @@ class HomeScreen extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(50)),
                           ),
                         ],
-
                       ),
-
-
-
                     ],
                   ),
                 ],
