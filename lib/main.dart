@@ -152,7 +152,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 8),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Icon(
                             Icons.location_on_outlined,
@@ -227,7 +227,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                             decoration: BoxDecoration(
                                 color: Colors.blue,
-                                borderRadius: BorderRadius.circular(16)),
+                                borderRadius: BorderRadius.circular(50)),
                           ),
                         ],
                       ),
