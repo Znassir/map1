@@ -55,10 +55,10 @@ class HomeScreen extends StatelessWidget {
                     ),
                     decoration: BoxDecoration(
                         color: Colors.cyan,
-                        borderRadius: BorderRadius.circular(16)),
+                        borderRadius: BorderRadius.circular(15)),
                   ),
                   SizedBox(
-                    width: 34,
+                    width: 35,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,7 +107,7 @@ class HomeScreen extends StatelessWidget {
               Text(
                 "Programming is the process of creating a set of instructions that tell a computer how to perform a task.",
                 style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 20,
                     fontWeight: FontWeight.w500,
                     color: Colors.black),
               ),
@@ -141,7 +141,10 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Text(
                                 "Robert Robertson, 1234 .",
-                                style: TextStyle(color: Colors.blue),
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.blue),
                               )
                             ],
                           )
@@ -170,7 +173,10 @@ class HomeScreen extends StatelessWidget {
                               ),
                               Text(
                                 "Robert Robertson, 1234 .",
-                                style: TextStyle(color: Colors.blue),
+                                style: TextStyle(
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.blue),
                               ),
                               SizedBox(
                                 width: 34,
@@ -221,7 +227,7 @@ class HomeScreen extends StatelessWidget {
                             ),
                             decoration: BoxDecoration(
                                 color: Colors.blue,
-                                borderRadius: BorderRadius.circular(50)),
+                                borderRadius: BorderRadius.circular(16)),
                           ),
                         ],
                       ),
