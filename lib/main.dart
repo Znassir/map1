@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                 leading: Icon(Icons.person),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()));
+                      MaterialPageRoute(builder: (context) => Page2()));
                 })
           ],
         ),
