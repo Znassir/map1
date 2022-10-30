@@ -8,7 +8,7 @@ class Page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Page 2'),
+        title: const Text('Online Programmer'),
       ),
       drawer: Drawer(
         child: Column(
@@ -19,8 +19,25 @@ class Page2 extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    width: 100,
-                    height: 100,
+                    width: 50,
+                    height: 50,
+                  ),
+                  ListTile(
+                    title: Text("Menu"),
+                    leading: Icon(Icons.home),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              width: 10,
+              height: 10,
+            ),Container(
+              child: Column(
+                children: [
+                  Container(
+                    width: 10,
+                    height: 10,
                   ),
                   ListTile(
                       title: Text("profile"),
@@ -32,10 +49,6 @@ class Page2 extends StatelessWidget {
                       }),
                 ],
               ),
-            ),
-            Container(
-              width: 10,
-              height: 10,
             ),
             ListTile(
                 title: Text("profile2"),
@@ -197,53 +210,7 @@ class Page2 extends StatelessWidget {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: 60,
-                            width: 180,
-                            child: TextButton(
-                              style: ButtonStyle(
-                                foregroundColor:
-                                    MaterialStateProperty.all<Color>(
-                                        Colors.blue),
-                              ),
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Page2()));
-                              },
-                              child: Text(
-                                'About us',
-                                style: TextStyle(
-                                    fontSize: 33, color: Colors.white),
-                              ),
-                            ),
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(50)),
-                          ),
-                          Container(
-                            height: 60,
-                            width: 180,
-                            child: TextButton(
-                              style: ButtonStyle(
-                                foregroundColor:
-                                    MaterialStateProperty.all<Color>(
-                                        Colors.blue),
-                              ),
-                              onPressed: () {},
-                              child: Text(
-                                'Address',
-                                style: TextStyle(
-                                    fontSize: 33, color: Colors.white),
-                              ),
-                            ),
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(50)),
-                          ),
-                        ],
+                        children: [],
                       ),
                     ],
                   ),

@@ -48,30 +48,44 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Container(
-                    width: 100,
-                    height: 100,
+                    width: 50,
+                    height: 50,
                   ),
                   ListTile(
-                    title: Text("profile"),
-                    leading: Icon(Icons.person),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Page2()));
-                    },
-                  )
+                    title: Text("Menu"),
+                    leading: Icon(Icons.home),
+                  ),
                 ],
               ),
             ),
             Container(
-              width: 100,
-              height: 100,
+              width: 10,
+              height: 10,
+            ),
+            Container(
+              child: Column(
+                children: [
+                  Container(
+                    width: 10,
+                    height: 10,
+                  ),
+                  ListTile(
+                      title: Text("profile"),
+                      leading: Icon(Icons.person),
+                      onTap: () {
+                        Navigator.pop(
+                          context,
+                        );
+                      }),
+                ],
+              ),
             ),
             ListTile(
                 title: Text("profile2"),
                 leading: Icon(Icons.person),
                 onTap: () {
-                  Navigator.pop(context,
-                      MaterialPageRoute(builder: (context) => Page2()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()));
                 })
           ],
         ),
