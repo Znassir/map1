@@ -198,7 +198,12 @@ class HomeScreen extends StatelessWidget {
                                     MaterialStateProperty.all<Color>(
                                         Colors.blue),
                               ),
-                              onPressed: () {},
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => Page2()));
+                              },
                               child: Text(
                                 'About us',
                                 style: TextStyle(
@@ -262,5 +267,52 @@ class CustomIconStyle extends StatelessWidget {
         width: 50,
         decoration: BoxDecoration(
             color: Colors.cyan, borderRadius: BorderRadius.circular(30)));
+  }
+}
+
+class FirstRoute extends StatelessWidget {
+  const FirstRoute({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('First Route'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: const Text('Open route'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const Page2(
+
+              )),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class Page2 extends StatelessWidget {
+  const Page2({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Page 2'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: const Text('Go back!'),
+        ),
+      ),
+    );
   }
 }
