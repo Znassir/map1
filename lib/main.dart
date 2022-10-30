@@ -38,6 +38,33 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Online Programmer'),
       ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            Container(
+              width:double.infinity,
+              color:Colors.blue ,
+              child: Column(
+                children: [
+                  Container(
+                    width: 100,
+                    height: 100,
+
+                  ),
+                  ListTile(
+                    title: Text("profile"),
+                    leading: Icon(Icons.person),
+                    onTap:(){
+                      Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => Page2()));
+                    } ,
+                  )
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(16),
