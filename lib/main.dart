@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'maindart2.dart';
+import 'Address.dart';
 
 void main() {
   runApp(const MyApp());
@@ -73,20 +74,28 @@ class HomeScreen extends StatelessWidget {
                       title: Text("profile"),
                       leading: Icon(Icons.person),
                       onTap: () {
-                        Navigator.pop(
-                          context,
-                        );
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeScreen()));
                       }),
+                  ListTile(
+                      title: Text("profile2"),
+                      leading: Icon(Icons.person),
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      }),
+                  ListTile(
+                      title: Text("Address"),
+                      leading: Icon(Icons.person),
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Address()));
+                      })
                 ],
               ),
             ),
-            ListTile(
-                title: Text("profile2"),
-                leading: Icon(Icons.person),
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Page2()));
-                })
           ],
         ),
       ),
@@ -273,29 +282,5 @@ class CustomIconStyle extends StatelessWidget {
         width: 50,
         decoration: BoxDecoration(
             color: Colors.cyan, borderRadius: BorderRadius.circular(30)));
-  }
-}
-
-class FirstRoute extends StatelessWidget {
-  const FirstRoute({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('First Route'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          child: const Text('Open route'),
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const Page2()),
-            );
-          },
-        ),
-      ),
-    );
   }
 }

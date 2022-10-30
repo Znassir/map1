@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'main.dart';
+import 'Address.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -49,17 +50,23 @@ class Page2 extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => HomeScreen()));
                       }),
+                  ListTile(
+                      title: Text("profile2"),
+                      leading: Icon(Icons.person),
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Page2()));
+                      }),
+                  ListTile(
+                      title: Text("Address"),
+                      leading: Icon(Icons.person),
+                      onTap: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Address()));
+                      })
                 ],
               ),
             ),
-            ListTile(
-                title: Text("profile2"),
-                leading: Icon(Icons.person),
-                onTap: () {
-                  Navigator.pop(
-                    context,
-                  );
-                })
           ],
         ),
       ),
