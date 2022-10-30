@@ -32,7 +32,8 @@ class Page2 extends StatelessWidget {
             Container(
               width: 10,
               height: 10,
-            ),Container(
+            ),
+            Container(
               child: Column(
                 children: [
                   Container(
@@ -43,9 +44,10 @@ class Page2 extends StatelessWidget {
                       title: Text("profile"),
                       leading: Icon(Icons.person),
                       onTap: () {
-                        Navigator.pop(
-                          context,
-                        );
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomeScreen()));
                       }),
                 ],
               ),
@@ -54,8 +56,9 @@ class Page2 extends StatelessWidget {
                 title: Text("profile2"),
                 leading: Icon(Icons.person),
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => HomeScreen()));
+                  Navigator.pop(
+                    context,
+                  );
                 })
           ],
         ),
