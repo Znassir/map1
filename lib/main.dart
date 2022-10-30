@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'maindart2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -42,26 +43,36 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              width:double.infinity,
-              color:Colors.blue ,
+              width: double.infinity,
+              color: Colors.blue,
               child: Column(
                 children: [
                   Container(
                     width: 100,
                     height: 100,
-
                   ),
                   ListTile(
                     title: Text("profile"),
                     leading: Icon(Icons.person),
-                    onTap:(){
-                      Navigator.push(context, MaterialPageRoute(
-                          builder: (context) => Page2()));
-                    } ,
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Page2()));
+                    },
                   )
                 ],
               ),
-            )
+            ),
+            Container(
+              width: 100,
+              height: 100,
+            ),
+            ListTile(
+                title: Text("profile2"),
+                leading: Icon(Icons.person),
+                onTap: () {
+                  Navigator.pop(context,
+                      MaterialPageRoute(builder: (context) => Page2()));
+                })
           ],
         ),
       ),
@@ -215,53 +226,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: 60,
-                            width: 180,
-                            child: TextButton(
-                              style: ButtonStyle(
-                                foregroundColor:
-                                    MaterialStateProperty.all<Color>(
-                                        Colors.blue),
-                              ),
-                              onPressed: () {
-                                Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => Page2()));
-                              },
-                              child: Text(
-                                'About us',
-                                style: TextStyle(
-                                    fontSize: 33, color: Colors.white),
-                              ),
-                            ),
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(50)),
-                          ),
-                          Container(
-                            height: 60,
-                            width: 180,
-                            child: TextButton(
-                              style: ButtonStyle(
-                                foregroundColor:
-                                    MaterialStateProperty.all<Color>(
-                                        Colors.blue),
-                              ),
-                              onPressed: () {},
-                              child: Text(
-                                'Address',
-                                style: TextStyle(
-                                    fontSize: 33, color: Colors.white),
-                              ),
-                            ),
-                            decoration: BoxDecoration(
-                                color: Colors.blue,
-                                borderRadius: BorderRadius.circular(50)),
-                          ),
-                        ],
+                        children: [],
                       ),
                     ],
                   ),
@@ -312,32 +277,9 @@ class FirstRoute extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const Page2(
-
-              )),
+              MaterialPageRoute(builder: (context) => const Page2()),
             );
           },
-        ),
-      ),
-    );
-  }
-}
-
-class Page2 extends StatelessWidget {
-  const Page2({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Page 2'),
-      ),
-      body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          child: const Text('Go back!'),
         ),
       ),
     );
