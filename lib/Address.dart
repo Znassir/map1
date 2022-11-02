@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
 import 'maindart2.dart';
+import 'main.dart';
+
 
 class Address extends StatelessWidget {
   const Address({super.key});
@@ -18,8 +19,8 @@ class Address extends StatelessWidget {
               width: double.infinity,
               color: Colors.blue,
               child: Column(
-                children: [
-                  Container(
+                children: const [
+                  SizedBox(
                     width: 50,
                     height: 50,
                   ),
@@ -30,42 +31,40 @@ class Address extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            const SizedBox(
               width: 10,
               height: 10,
             ),
-            Container(
-              child: Column(
-                children: [
-                  Container(
-                    width: 10,
-                    height: 10,
-                  ),
-                  ListTile(
-                      title: Text("profile"),
-                      leading: Icon(Icons.person),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeScreen()));
-                      }),
-                  ListTile(
-                      title: Text("profile2"),
-                      leading: Icon(Icons.person),
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Page2()));
-                      }),
-                  ListTile(
-                      title: Text("Address"),
-                      leading: Icon(Icons.person),
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Address()));
-                      })
-                ],
-              ),
+            Column(
+              children: [
+                const SizedBox(
+                  width: 10,
+                  height: 10,
+                ),
+                ListTile(
+                    title: const Text("profile"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomeScreen()));
+                    }),
+                ListTile(
+                    title: const Text("profile2"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => const Page2()));
+                    }),
+                ListTile(
+                    title: const Text("Address"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => const Address()));
+                    })
+              ],
             ),
           ],
         ),

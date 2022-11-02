@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -47,8 +47,8 @@ class HomeScreen extends StatelessWidget {
               width: double.infinity,
               color: Colors.blue,
               child: Column(
-                children: [
-                  Container(
+                children: const [
+                  SizedBox(
                     width: 50,
                     height: 50,
                   ),
@@ -59,42 +59,40 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Container(
+            const SizedBox(
               width: 10,
               height: 10,
             ),
-            Container(
-              child: Column(
-                children: [
-                  Container(
-                    width: 10,
-                    height: 10,
-                  ),
-                  ListTile(
-                      title: Text("profile"),
-                      leading: Icon(Icons.person),
-                      onTap: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomeScreen()));
-                      }),
-                  ListTile(
-                      title: Text("profile2"),
-                      leading: Icon(Icons.person),
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Page2()));
-                      }),
-                  ListTile(
-                      title: Text("Address"),
-                      leading: Icon(Icons.person),
-                      onTap: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => Address()));
-                      })
-                ],
-              ),
+            Column(
+              children: [
+                const SizedBox(
+                  width: 10,
+                  height: 10,
+                ),
+                ListTile(
+                    title: const Text("profile"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const HomeScreen()));
+                    }),
+                ListTile(
+                    title: const Text("profile2"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => const Page2()));
+                    }),
+                ListTile(
+                    title: const Text("Address"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => const Address()));
+                    })
+              ],
             ),
           ],
         ),
@@ -110,26 +108,26 @@ class HomeScreen extends StatelessWidget {
                   Container(
                     height: 178,
                     width: 128,
-                    child: Image(
-                      image: AssetImage("Asset/img/blank.webp"),
-                      fit: BoxFit.contain,
-                    ),
                     decoration: BoxDecoration(
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(15)),
+                    child: const Image(
+                      image: AssetImage("Asset/img/blank.webp"),
+                      fit: BoxFit.contain,
+                    ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 35,
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Eng.Ziad Nassir",
                         style: TextStyle(
                             fontSize: 24, fontWeight: FontWeight.w500),
                       ),
-                      Text(
+                      const Text(
                         "Software Devoloper",
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
@@ -137,7 +135,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.black87),
                       ),
                       Row(
-                        children: [
+                        children: const [
                           CustomIconStyle(
                             icon: Icons.mail,
                           ),
@@ -155,24 +153,24 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 30,
               ),
-              Text(
+              const Text(
                 "About",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
-              Text(
+              const Text(
                 "Programming is the process of creating a set of instructions that tell a computer how to perform a task.",
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
                     color: Colors.black),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 64,
               ),
               Row(
@@ -183,16 +181,16 @@ class HomeScreen extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.location_on_outlined,
                             color: Colors.black,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text(
                                 "Address",
                                 style: TextStyle(fontSize: 24),
@@ -211,20 +209,20 @@ class HomeScreen extends StatelessWidget {
                           )
                         ],
                       ),
-                      SizedBox(height: 8),
+                      const SizedBox(height: 8),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.location_on_outlined,
                             color: Colors.black,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 10,
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text(
                                 "Address",
                                 style: TextStyle(fontSize: 24),
@@ -249,7 +247,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
-                        children: [],
+                        children: const [],
                       ),
                     ],
                   ),
@@ -273,14 +271,14 @@ class CustomIconStyle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+        height: 36,
+        width: 50,
+        decoration: BoxDecoration(
+            color: Colors.cyan, borderRadius: BorderRadius.circular(30)),
         child: Icon(
           icon,
           color: Colors.white,
           size: 32,
-        ),
-        height: 36,
-        width: 50,
-        decoration: BoxDecoration(
-            color: Colors.cyan, borderRadius: BorderRadius.circular(30)));
+        ));
   }
 }
