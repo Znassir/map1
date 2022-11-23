@@ -68,15 +68,6 @@ class Page2 extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => const Address()));
                     }),
-                ListTile(
-                    title: const Text("Registeration"),
-                    leading: const Icon(Icons.newspaper),
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const Registeration()));
-                    })
               ],
             ),
           ],

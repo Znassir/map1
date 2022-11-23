@@ -54,18 +54,11 @@ class Address extends StatelessWidget {
                     title: const Text("profile2"),
                     leading: const Icon(Icons.person),
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const Page2()));
-                    }),
-                ListTile(
-                    title: const Text("Registeration"),
-                    leading: const Icon(Icons.newspaper),
-                    onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Registeration()));
-                    })
+                              builder: (context) => const Page2()));
+                    }),
               ],
             ),
           ],
