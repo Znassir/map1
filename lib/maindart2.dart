@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:map1/Registeration.dart';
 import 'main.dart';
 import 'Address.dart';
 
@@ -53,15 +54,28 @@ class Page2 extends StatelessWidget {
                     title: const Text("profile2"),
                     leading: const Icon(Icons.person),
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const Page2()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Page2()));
                     }),
                 ListTile(
                     title: const Text("Address"),
                     leading: const Icon(Icons.person),
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const Address()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Address()));
+                    }),
+                ListTile(
+                    title: const Text("Registeration"),
+                    leading: const Icon(Icons.newspaper),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Registeration()));
                     })
               ],
             ),
