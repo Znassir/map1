@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'maindart2.dart';
 import 'Address.dart';
+import 'Registeration.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const Registeration(),
     );
   }
 }
@@ -82,15 +83,28 @@ class HomeScreen extends StatelessWidget {
                     title: const Text("profile2"),
                     leading: const Icon(Icons.person),
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const Page2()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Page2()));
                     }),
                 ListTile(
                     title: const Text("Address"),
                     leading: const Icon(Icons.person),
                     onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => const Address()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Address()));
+                    }),
+                ListTile(
+                    title: const Text("Registeration"),
+                    leading: const Icon(Icons.newspaper),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Registeration()));
                     })
               ],
             ),
