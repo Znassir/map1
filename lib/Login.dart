@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:map1/reusable_widget/reusable_widget.dart';
 import 'package:map1/utils/colors_utils.dart';
 
 class SignInScreen extends StatefulWidget {
@@ -9,6 +10,9 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
+
+  TextEditingController _passwordTextController = TextEditingController();
+  TextEditingController _emailTextController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +27,18 @@ class _SignInScreenState extends State<SignInScreen> {
         ],begin: Alignment.topCenter ,end: Alignment.bottomCenter )),
         child: SingleChildScrollView(child: Padding(padding: EdgeInsets.fromLTRB(20, MediaQuery.of(context).size.height *0.2, 20, 0),child:Column(
           children: <Widget>[
-            logoWidget("Asset/img/logo.png")
+            logoWidget("Asset/img/logo.png"),
+            SizedBox(
+              height: 30,
+            ),
+            reusableTextField("Enter Username", Icons.person_outline, false,
+                _emailTextController),
+            SizedBox(
+              height: 20,
+
+            ),
+              reusableTextField("Enter Password", Icons.lock_outline, true,
+                  _passwordTextController),
 
           ],) ,),),
       ),
@@ -32,8 +47,6 @@ class _SignInScreenState extends State<SignInScreen> {
 
 
   }
-  Image logoWidget (String imageName ){
-    return Image.asset(imageName, fit : BoxFit.fitWidth, width: 240, height: 240,);
-  }
+
 }
 
