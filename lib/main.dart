@@ -3,6 +3,7 @@ import 'package:map1/Login.dart';
 import 'maindart2.dart';
 import 'Address.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -133,7 +134,7 @@ class HomeScreen extends StatelessWidget {
                             fontSize: 24, fontWeight: FontWeight.w500),
                       ),
                       const Text(
-                        "Software Devoloper",
+                        "Software Developer",
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
                             fontSize: 18,

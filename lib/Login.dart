@@ -35,10 +35,14 @@ class _SignInScreenState extends State<SignInScreen> {
                 _emailTextController),
             SizedBox(
               height: 20,
-
             ),
               reusableTextField("Enter Password", Icons.lock_outline, true,
                   _passwordTextController),
+            SizedBox(
+              height: 20,
+            ),
+            singInSignUpButton(context, true, (){})
+            
 
           ],) ,),),
       ),
@@ -47,6 +51,24 @@ class _SignInScreenState extends State<SignInScreen> {
 
 
   }
+  Row signUpOption() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        const Text("Don't have account?",
+            style: TextStyle(color: Colors.white70)),
+        GestureDetector(
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => SignUpScreen()));
+          },
+          child: const Text(
+            " Sign Up",
+            style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+          ),
+        )
+      ],
+    );
 
 }
 
