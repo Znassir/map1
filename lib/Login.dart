@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:map1/Registeration.dart';
+import 'package:map1/main.dart';
 import 'package:map1/reusable_widget/reusable_widget.dart';
 import 'package:map1/utils/colors_utils.dart';
 
@@ -46,7 +47,9 @@ class _SignInScreenState extends State<SignInScreen> {
                 const SizedBox(
                   height: 20,
                 ),
-                singInSignUpButton(context, true, () {}),
+                singInSignUpButton(context, true, () {
+                  Navigator.push(context,MaterialPageRoute(builder: (context) => HomeScreen()));
+                }),
                 signUpOption()
               ],
             ),
