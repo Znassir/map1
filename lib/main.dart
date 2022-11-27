@@ -1,9 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'maindart2.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
 
-void main() {
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -128,7 +131,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Container(
                     height: 178,
-                    width: 128,
+                    width: 128, 
                     decoration: BoxDecoration(
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
