@@ -97,6 +97,10 @@ class HomeScreen extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => const Address()));
                     }),
+                const SizedBox(
+                  width: 450,
+                  height: 450,
+                ),
                 ListTile(
                     title: const Text("log out"),
                     leading: const Icon(Icons.signpost_outlined),
