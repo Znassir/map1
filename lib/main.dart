@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:map1/Login.dart';
 import 'maindart2.dart';
 import 'Address.dart';
-
+import 'package:map1/Login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const SignInScreen(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -97,6 +96,15 @@ class HomeScreen extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => const Address()));
+                    }),
+                ListTile(
+                    title: const Text("log out"),
+                    leading: const Icon(Icons.signpost_outlined),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignInScreen()));
                     }),
               ],
             ),

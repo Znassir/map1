@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:map1/Registeration.dart';
 import 'main.dart';
 import 'Address.dart';
+import 'package:map1/Login.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -67,6 +67,15 @@ class Page2 extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (context) => const Address()));
+                    }),
+                ListTile(
+                    title: const Text("log out"),
+                    leading: const Icon(Icons.signpost_outlined),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const SignInScreen()));
                     }),
               ],
             ),
