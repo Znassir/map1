@@ -103,7 +103,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 ListTile(
                     title: const Text("log out"),
-                    leading: const Icon(Icons.signpost_outlined),
+                    leading: const Icon(Icons.logout_rounded),
                     onTap: () {
                       Navigator.push(
                           context,
