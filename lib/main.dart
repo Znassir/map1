@@ -136,7 +136,7 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("![](../Asset/img/6.jpg)"),
+                      image: AssetImage("Asset/img/1.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -155,7 +155,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("![](../Asset/img/1.jpg)"),
+                          image: AssetImage("Asset/img/2.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -176,7 +176,7 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("![](../Asset/img/2.jpg)"),
+                      image: AssetImage("Asset/img/3.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -194,7 +194,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("![](../Asset/img/3.jpg)"),
+                          image: AssetImage("Asset/img/4.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -220,7 +220,7 @@ class HomeScreen extends StatelessWidget {
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(20)),
                             child: const Image(
-                              image: AssetImage("![](../Asset/img/4.jpg)"),
+                              image: AssetImage("Asset/img/5.jpg"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -238,7 +238,7 @@ class HomeScreen extends StatelessWidget {
                                     color: Colors.cyan,
                                     borderRadius: BorderRadius.circular(20)),
                                 child: const Image(
-                                  image: AssetImage("![](../Asset/img/5.jpg)"),
+                                  image: AssetImage("Asset/img/6.jpg"),
                                   fit: BoxFit.contain,
                                 ),
                               ),
