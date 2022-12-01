@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:map1/main.dart';
 import 'package:map1/reusable_widget/reusable_widget.dart';
 import 'package:map1/utils/colors_utils.dart';
+import 'package:sqflite/sqflite.dart';
+
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({Key? key}) : super(key: key);

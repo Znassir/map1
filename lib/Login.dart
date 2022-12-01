@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:map1/Registeration.dart';
 import 'package:map1/main.dart';
@@ -19,18 +20,27 @@ class _SignInScreenState extends State<SignInScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
+        width: MediaQuery
+            .of(context)
+            .size
+            .width,
+        height: MediaQuery
+            .of(context)
+            .size
+            .height,
         decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
-          hexStringToColor("CB2B93"),
-          hexStringToColor("9546C4"),
-          hexStringToColor("5E61F4")
-        ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
+              hexStringToColor("CB2B93"),
+              hexStringToColor("9546C4"),
+              hexStringToColor("5E61F4")
+            ], begin: Alignment.topCenter, end: Alignment.bottomCenter)),
         child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.fromLTRB(
-                20, MediaQuery.of(context).size.height * 0.2, 20, 0),
+                20, MediaQuery
+                .of(context)
+                .size
+                .height * 0.2, 20, 0),
             child: Column(
               children: <Widget>[
                 logoWidget("Asset/img/logo.png"),
@@ -48,7 +58,12 @@ class _SignInScreenState extends State<SignInScreen> {
                   height: 20,
                 ),
                 singInSignUpButton(context, true, () {
-                  Navigator.push(context,MaterialPageRoute(builder: (context) => HomeScreen()));
+                  FirebaseAuth.instance.signInWithEmailAndPassword(
+                      email: _emailTextController.text,
+                      password: _passwordTextController.text).then((value){
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomeScreen()));
+                  });
                 }),
                 signUpOption()
               ],
