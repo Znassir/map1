@@ -42,7 +42,7 @@ class Address extends StatelessWidget {
                   height: 10,
                 ),
                 ListTile(
-                    title: const Text("profile"),
+                    title: const Text("Chairs"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -51,7 +51,7 @@ class Address extends StatelessWidget {
                               builder: (context) => const HomeScreen()));
                     }),
                 ListTile(
-                    title: const Text("profile2"),
+                    title: const Text("Tables"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -60,7 +60,7 @@ class Address extends StatelessWidget {
                               builder: (context) => const Page2()));
                     }),
                 ListTile(
-                    title: const Text("Address"),
+                    title: const Text("Carpet"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -84,6 +84,136 @@ class Address extends StatelessWidget {
               ],
             ),
           ],
+        ),
+      ),
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(50),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 128,
+                    decoration: BoxDecoration(
+                        color: Colors.cyan,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: const Image(
+                      image: AssetImage("Asset/img/C1.jpg"),
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 128,
+                        decoration: BoxDecoration(
+                            color: Colors.cyan,
+                            borderRadius: BorderRadius.circular(20)),
+                        child: const Image(
+                          image: AssetImage("Asset/img/C2.jpg"),
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              Row(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 128,
+                    decoration: BoxDecoration(
+                        color: Colors.cyan,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: const Image(
+                      image: AssetImage("Asset/img/C3.jpg"),
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 128,
+                        decoration: BoxDecoration(
+                            color: Colors.cyan,
+                            borderRadius: BorderRadius.circular(20)),
+                        child: const Image(
+                          image: AssetImage("Asset/img/C4.jpg"),
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 64,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+                            height: 150,
+                            width: 128,
+                            decoration: BoxDecoration(
+                                color: Colors.cyan,
+                                borderRadius: BorderRadius.circular(20)),
+                            child: const Image(
+                              image: AssetImage("Asset/img/C5.jpg"),
+                              fit: BoxFit.contain,
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 35,
+                            height: 35,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                height: 150,
+                                width: 128,
+                                decoration: BoxDecoration(
+                                    color: Colors.cyan,
+                                    borderRadius: BorderRadius.circular(20)),
+                                child: const Image(
+                                  image: AssetImage("Asset/img/C6.jpg"),
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

@@ -92,7 +92,7 @@ class HomeScreen extends StatelessWidget {
                               builder: (context) => const Page2()));
                     }),
                 ListTile(
-                    title: const Text("Address"),
+                    title: const Text("Carpet"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
