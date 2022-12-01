@@ -42,7 +42,7 @@ class Page2 extends StatelessWidget {
                   height: 10,
                 ),
                 ListTile(
-                    title: const Text("profile"),
+                    title: const Text("Chairs"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -51,7 +51,7 @@ class Page2 extends StatelessWidget {
                               builder: (context) => const HomeScreen()));
                     }),
                 ListTile(
-                    title: const Text("profile2"),
+                    title: const Text("Tables"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -88,56 +88,41 @@ class Page2 extends StatelessWidget {
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(50),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   Container(
-                    height: 178,
+                    height: 150,
                     width: 128,
                     decoration: BoxDecoration(
                         color: Colors.cyan,
-                        borderRadius: BorderRadius.circular(15)),
+                        borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/blank.webp"),
+                      image: AssetImage("Asset/img/T1.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
                   const SizedBox(
                     width: 35,
+                    height: 35,
                   ),
                   Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const Text(
-                        "Eng.Qutub",
-                        style: TextStyle(
-                            fontSize: 24, fontWeight: FontWeight.w500),
+                      Container(
+                        height: 150,
+                        width: 128,
+                        decoration: BoxDecoration(
+                            color: Colors.cyan,
+                            borderRadius: BorderRadius.circular(20)),
+                        child: const Image(
+                          image: AssetImage("Asset/img/T2.jpg"),
+                          fit: BoxFit.contain,
+                        ),
                       ),
-                      const Text(
-                        "Software Devoloper",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 18,
-                            color: Colors.black87),
-                      ),
-                      Row(
-                        children: const [
-                          CustomIconStyle(
-                            icon: Icons.mail,
-                          ),
-                          SizedBox(width: 8),
-                          CustomIconStyle(
-                            icon: Icons.phone,
-                          ),
-                          SizedBox(width: 8),
-                          CustomIconStyle(
-                            icon: Icons.video_call,
-                          ),
-                        ],
-                      )
                     ],
                   ),
                 ],
@@ -145,19 +130,40 @@ class Page2 extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              const Text(
-                "About",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
-              ),
-              const SizedBox(
-                height: 8,
-              ),
-              const Text(
-                "Programming is the process of creating a set of instructions that tell a computer how to perform a task.",
-                style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.w500,
-                    color: Colors.black),
+              Row(
+                children: [
+                  Container(
+                    height: 150,
+                    width: 128,
+                    decoration: BoxDecoration(
+                        color: Colors.cyan,
+                        borderRadius: BorderRadius.circular(20)),
+                    child: const Image(
+                      image: AssetImage("Asset/img/T3.jpg"),
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 35,
+                    height: 35,
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        height: 150,
+                        width: 128,
+                        decoration: BoxDecoration(
+                            color: Colors.cyan,
+                            borderRadius: BorderRadius.circular(20)),
+                        child: const Image(
+                          image: AssetImage("Asset/img/T4.jpg"),
+                          fit: BoxFit.contain,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
               const SizedBox(
                 height: 64,
@@ -168,75 +174,39 @@ class Page2 extends StatelessWidget {
                   Column(
                     children: [
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Icon(
-                            Icons.location_on_outlined,
-                            color: Colors.black,
+                          Container(
+                            height: 150,
+                            width: 128,
+                            decoration: BoxDecoration(
+                                color: Colors.cyan,
+                                borderRadius: BorderRadius.circular(20)),
+                            child: const Image(
+                              image: AssetImage("Asset/img/T5.jpg"),
+                              fit: BoxFit.contain,
+                            ),
                           ),
                           const SizedBox(
-                            width: 10,
+                            width: 35,
+                            height: 35,
                           ),
                           Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                "Address",
-                                style: TextStyle(fontSize: 24),
-                              ),
-                              SizedBox(
-                                width: 200,
-                              ),
-                              Text(
-                                "Robert Robertson, 1234 .",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.blue),
-                              )
-                            ],
-                          )
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          const Icon(
-                            Icons.location_on_outlined,
-                            color: Colors.black,
-                          ),
-                          const SizedBox(
-                            width: 10,
-                          ),
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: const [
-                              Text(
-                                "Address",
-                                style: TextStyle(fontSize: 24),
-                              ),
-                              SizedBox(
-                                width: 200,
-                              ),
-                              Text(
-                                "Robert Robertson, 1234 .",
-                                style: TextStyle(
-                                    fontSize: 20,
-                                    fontWeight: FontWeight.w500,
-                                    color: Colors.blue),
-                              ),
-                              SizedBox(
-                                width: 34,
-                                height: 20,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Container(
+                                height: 150,
+                                width: 128,
+                                decoration: BoxDecoration(
+                                    color: Colors.cyan,
+                                    borderRadius: BorderRadius.circular(20)),
+                                child: const Image(
+                                  image: AssetImage("Asset/img/T6.jpg"),
+                                  fit: BoxFit.contain,
+                                ),
                               ),
                             ],
-                          )
+                          ),
                         ],
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: const [],
                       ),
                     ],
                   ),

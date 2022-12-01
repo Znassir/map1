@@ -4,7 +4,7 @@ import 'maindart2.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
 
-void main() async{
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(const MyApp());
@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Bags store'),
+        title: const Text('I-Qutub'),
       ),
       drawer: Drawer(
         child: Column(
@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                   height: 10,
                 ),
                 ListTile(
-                    title: const Text("Charis"),
+                    title: const Text("Chairs"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -83,7 +83,7 @@ class HomeScreen extends StatelessWidget {
                               builder: (context) => const HomeScreen()));
                     }),
                 ListTile(
-                    title: const Text("profile2"),
+                    title: const Text("Tables"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -131,7 +131,7 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Container(
                     height: 150,
-                    width: 128, 
+                    width: 128,
                     decoration: BoxDecoration(
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
@@ -140,7 +140,6 @@ class HomeScreen extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   ),
-
                   const SizedBox(
                     width: 35,
                     height: 35,
@@ -161,7 +160,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-
                 ],
               ),
               const SizedBox(
@@ -200,7 +198,6 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ],
                   ),
-
                 ],
               ),
               const SizedBox(
@@ -244,7 +241,6 @@ class HomeScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-
                         ],
                       ),
                     ],
