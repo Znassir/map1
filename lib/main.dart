@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('I-Qutub'),
+        title: const Text('Chairs'),
       ),
       drawer: Drawer(
         child: Column(

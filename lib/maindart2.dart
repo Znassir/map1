@@ -10,7 +10,7 @@ class Page2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Online Programmer'),
+        title: const Text('Tables'),
       ),
       drawer: Drawer(
         child: Column(
