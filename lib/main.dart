@@ -74,7 +74,7 @@ class HomeScreen extends StatelessWidget {
                   height: 10,
                 ),
                 ListTile(
-                    title: const Text("profile"),
+                    title: const Text("Charis"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -123,20 +123,20 @@ class HomeScreen extends StatelessWidget {
 
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16),
+          padding: const EdgeInsets.all(50),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
                   Container(
-                    height: 178,
+                    height: 150,
                     width: 128, 
                     decoration: BoxDecoration(
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/blank.webp"),
+                      image: AssetImage("![](../Asset/img/6.jpg)"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -149,13 +149,13 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        height: 178,
+                        height: 150,
                         width: 128,
                         decoration: BoxDecoration(
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/blank.webp"),
+                          image: AssetImage("![](../Asset/img/1.jpg)"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -170,13 +170,13 @@ class HomeScreen extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    height: 178,
+                    height: 150,
                     width: 128,
                     decoration: BoxDecoration(
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/blank.webp"),
+                      image: AssetImage("![](../Asset/img/2.jpg)"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -188,13 +188,13 @@ class HomeScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        height: 178,
+                        height: 150,
                         width: 128,
                         decoration: BoxDecoration(
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/blank.webp"),
+                          image: AssetImage("![](../Asset/img/3.jpg)"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -214,13 +214,13 @@ class HomeScreen extends StatelessWidget {
                       Row(
                         children: [
                           Container(
-                            height: 178,
+                            height: 150,
                             width: 128,
                             decoration: BoxDecoration(
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(20)),
                             child: const Image(
-                              image: AssetImage("Asset/img/blank.webp"),
+                              image: AssetImage("![](../Asset/img/4.jpg)"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -232,13 +232,13 @@ class HomeScreen extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Container(
-                                height: 178,
+                                height: 150,
                                 width: 128,
                                 decoration: BoxDecoration(
                                     color: Colors.cyan,
                                     borderRadius: BorderRadius.circular(20)),
                                 child: const Image(
-                                  image: AssetImage("Asset/img/blank.webp"),
+                                  image: AssetImage("![](../Asset/img/5.jpg)"),
                                   fit: BoxFit.contain,
                                 ),
                               ),
