@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'main.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
+import 'package:camera/camera.dart';
+import 'package:map1/camera_page.dart';
+
+
+
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -206,6 +211,21 @@ class Page2 extends StatelessWidget {
                               ),
                             ],
                           ),
+                          Container(
+                              child: ElevatedButton(
+                                onPressed: () async {
+                                  await availableCameras().then(
+                                        (value) => Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) => CameraPage(cameras: value,),
+                                      ),
+                                    ),
+                                  );
+                                },
+                                child: const Text('Launch Camera'),
+                              )
+                          )
                         ],
                       ),
                     ],
