@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:map1/beds.dart';
-import 'package:map1/blanket.dart';
 import 'package:map1/pillow.dart';
 import 'main.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
-import 'package:camera/camera.dart';
 import 'package:map1/camera_page.dart';
+import 'maindart2.dart';
+import 'beds.dart';
+// ignore: camel_case_types
 
-class Page2 extends StatelessWidget {
-  const Page2({super.key});
+class blanket extends StatelessWidget {
+  const blanket({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Tables'),
+        title: const Text('Blanket'),
       ),
       drawer: Drawer(
         child: Column(
@@ -83,7 +83,7 @@ class Page2 extends StatelessWidget {
                               builder: (context) => const blanket()));
                     }),
                 ListTile(
-                    title: const Text("Beds"),
+                    title: const Text("beds"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(

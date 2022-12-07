@@ -3,9 +3,11 @@ import 'package:flutter/material.dart';
 
 class CameraPage extends StatefulWidget {
   final List<CameraDescription>? cameras;
+
   const CameraPage({this.cameras, Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _CameraPageState createState() => _CameraPageState();
 }
 
@@ -69,7 +71,22 @@ class _CameraPageState extends State<CameraPage> {
           Image.network(
             pictureFile!.path,
             height: 200,
-          )
+          ),
+        ElevatedButton(
+          onPressed: () async {
+            await availableCameras().then(
+              (value) => Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CameraPage(
+                    cameras: value,
+                  ),
+                ),
+              ),
+            );
+          },
+          child: const Text('Launch Camera'),
+        ),
         //Android/iOS
         // Image.file(File(pictureFile!.path)))
       ],

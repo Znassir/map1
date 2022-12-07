@@ -39,7 +39,7 @@ dependencies:
   firebase_core: ^2.3.0
   firebase_auth: ^4.1.4
   http: any
-  camera: ^0.10.0+4
+  camera:
   video_player: ^2.1.14
   path_provider: ^2.0.2
   path: 1.8.2

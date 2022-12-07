@@ -1,6 +1,10 @@
+import 'package:camera/camera.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
+import 'package:map1/beds.dart';
+import 'package:map1/blanket.dart';
+import 'package:map1/camera_page.dart';
+import 'package:map1/pillow.dart';
 import 'maindart2.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
@@ -8,9 +12,12 @@ import 'package:map1/Login.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-
+  WidgetsFlutterBinding.ensureInitialized();
+  cameras = await availableCameras();
   runApp(const MyApp());
 }
+
+List<CameraDescription> cameras = List.empty(growable: true);
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -32,7 +39,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const SignInScreen(),
+      home: const HomeScreen(),
     );
   }
 }
@@ -102,9 +109,63 @@ class HomeScreen extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => const Address()));
                     }),
+                ListTile(
+                    title: const Text("blanket"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const blanket()));
+                    }),
+                ListTile(
+                    title: const Text("Beds"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const beds()));
+                    }),
+                ListTile(
+                    title: const Text("pillow"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const pillow()));
+                    }),
+                ListTile(
+                    title: const Text("Tables"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Page2()));
+                    }),
+                ListTile(
+                    title: const Text("Carpet"),
+                    leading: const Icon(Icons.person),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const Address()));
+                    }),
+                ListTile(
+                    title: const Text("Camera"),
+                    leading: const Icon(Icons.camera),
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const CameraPage()));
+                    }),
                 const SizedBox(
-                  width: 450,
-                  height: 450,
+                  width: 110,
+                  height: 110,
                 ),
                 ListTile(
                     title: const Text("logout"),
