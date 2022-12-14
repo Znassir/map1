@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:map1/Contact_us.dart';
 import 'package:map1/blanket.dart';
 import 'package:map1/pillow.dart';
 import 'main.dart';
@@ -111,13 +112,13 @@ class Clock extends StatelessWidget {
                               builder: (context) => const Clock()));
                     }),
                 ListTile(
-                    title: const Text("Carpet"),
+                    title: const Text("About us"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Address()));
+                              builder: (context) => const About_us()));
                     }),
                 ListTile(
                     title: const Text("Camera"),

@@ -162,7 +162,7 @@ class beds extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/T1.jpg"),
+                      image: AssetImage("Asset/img/bed1.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -180,7 +180,7 @@ class beds extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/T2.jpg"),
+                          image: AssetImage("Asset/img/bed2.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -200,7 +200,7 @@ class beds extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/T3.jpg"),
+                      image: AssetImage("Asset/img/bed3.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -218,7 +218,7 @@ class beds extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/T4.jpg"),
+                          image: AssetImage("Asset/img/bed4.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -243,7 +243,7 @@ class beds extends StatelessWidget {
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(20)),
                             child: const Image(
-                              image: AssetImage("Asset/img/T5.jpg"),
+                              image: AssetImage("Asset/img/bed5.jpg"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -261,7 +261,7 @@ class beds extends StatelessWidget {
                                     color: Colors.cyan,
                                     borderRadius: BorderRadius.circular(20)),
                                 child: const Image(
-                                  image: AssetImage("Asset/img/T6.jpg"),
+                                  image: AssetImage("Asset/img/bed6.jpg"),
                                   fit: BoxFit.contain,
                                 ),
                               ),
