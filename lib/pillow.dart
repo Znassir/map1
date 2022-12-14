@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:map1/blanket.dart';
+import 'Contact_us.dart';
+import 'Wall_clock.dart';
 import 'main.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
@@ -101,22 +103,22 @@ class pillow extends StatelessWidget {
                               builder: (context) => const pillow()));
                     }),
                 ListTile(
-                    title: const Text("Tables"),
+                    title: const Text("Clock"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Page2()));
+                              builder: (context) => const Clock()));
                     }),
                 ListTile(
-                    title: const Text("Carpet"),
+                    title: const Text("About us"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Address()));
+                              builder: (context) => const About_us()));
                     }),
                 ListTile(
                     title: const Text("Camera"),
@@ -160,7 +162,7 @@ class pillow extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/T1.jpg"),
+                      image: AssetImage("Asset/img/pillow1.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -178,7 +180,7 @@ class pillow extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/T2.jpg"),
+                          image: AssetImage("Asset/img/pillow2.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -198,7 +200,7 @@ class pillow extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/T3.jpg"),
+                      image: AssetImage("Asset/img/pillow3.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -216,7 +218,7 @@ class pillow extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/T4.jpg"),
+                          image: AssetImage("Asset/img/pillow4.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -241,7 +243,7 @@ class pillow extends StatelessWidget {
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(20)),
                             child: const Image(
-                              image: AssetImage("Asset/img/T5.jpg"),
+                              image: AssetImage("Asset/img/pillow5.jpg"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -259,7 +261,7 @@ class pillow extends StatelessWidget {
                                     color: Colors.cyan,
                                     borderRadius: BorderRadius.circular(20)),
                                 child: const Image(
-                                  image: AssetImage("Asset/img/T6.jpg"),
+                                  image: AssetImage("Asset/img/pillow6.jpg"),
                                   fit: BoxFit.contain,
                                 ),
                               ),

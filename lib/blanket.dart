@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:map1/pillow.dart';
+import 'Contact_us.dart';
+import 'Wall_clock.dart';
 import 'main.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
@@ -8,6 +10,7 @@ import 'maindart2.dart';
 import 'beds.dart';
 // ignore: camel_case_types
 
+// ignore: camel_case_types
 class blanket extends StatelessWidget {
   const blanket({super.key});
 
@@ -101,22 +104,22 @@ class blanket extends StatelessWidget {
                               builder: (context) => const pillow()));
                     }),
                 ListTile(
-                    title: const Text("Tables"),
+                    title: const Text("Clock"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Page2()));
+                              builder: (context) => const Clock()));
                     }),
                 ListTile(
-                    title: const Text("Carpet"),
+                    title: const Text("About_us"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Address()));
+                              builder: (context) => const About_us()));
                     }),
                 ListTile(
                     title: const Text("Camera"),

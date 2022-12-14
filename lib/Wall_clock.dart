@@ -1,59 +1,22 @@
-import 'package:camera/camera.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:map1/beds.dart';
 import 'package:map1/blanket.dart';
-import 'package:map1/camera_page.dart';
 import 'package:map1/pillow.dart';
-import 'Contact_us.dart';
-import 'Wall_clock.dart';
-import 'maindart2.dart';
+import 'main.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
+import 'package:map1/camera_page.dart';
+import 'maindart2.dart';
+import 'beds.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  WidgetsFlutterBinding.ensureInitialized();
-  cameras = await availableCameras();
-  runApp(const MyApp());
-}
-
-List<CameraDescription> cameras = List.empty(growable: true);
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: const HomeScreen(),
-    );
-  }
-}
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+// ignore: camel_case_types
+class Clock extends StatelessWidget {
+  const Clock({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chairs'),
+        title: const Text('Clock'),
       ),
       drawer: Drawer(
         child: Column(
@@ -121,7 +84,7 @@ class HomeScreen extends StatelessWidget {
                               builder: (context) => const blanket()));
                     }),
                 ListTile(
-                    title: const Text("Beds"),
+                    title: const Text("beds"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
@@ -148,23 +111,22 @@ class HomeScreen extends StatelessWidget {
                               builder: (context) => const Clock()));
                     }),
                 ListTile(
-                    title: const Text("About_us"),
+                    title: const Text("Carpet"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const About_us()));
+                              builder: (context) => const Address()));
                     }),
                 ListTile(
                     title: const Text("Camera"),
                     leading: const Icon(Icons.camera),
-                    onTap: () async {
-                      await availableCameras().then(
-                              (value) => Navigator.push(
-                              context,
+                    onTap: () {
+                      Navigator.push(
+                          context,
                           MaterialPageRoute(
-                              builder: (context) => const CameraPage())));
+                              builder: (context) => const CameraPage()));
                     }),
                 const SizedBox(
                   width: 110,
@@ -184,9 +146,6 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
-
-      //Our page
-
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(50),
@@ -202,7 +161,7 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/1.jpg"),
+                      image: AssetImage("Asset/img/Clock1.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -220,7 +179,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/2.jpg"),
+                          image: AssetImage("Asset/img/Clock2.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -240,7 +199,7 @@ class HomeScreen extends StatelessWidget {
                         color: Colors.cyan,
                         borderRadius: BorderRadius.circular(20)),
                     child: const Image(
-                      image: AssetImage("Asset/img/3.jpg"),
+                      image: AssetImage("Asset/img/Clock3.jpg"),
                       fit: BoxFit.contain,
                     ),
                   ),
@@ -258,7 +217,7 @@ class HomeScreen extends StatelessWidget {
                             color: Colors.cyan,
                             borderRadius: BorderRadius.circular(20)),
                         child: const Image(
-                          image: AssetImage("Asset/img/4.jpg"),
+                          image: AssetImage("Asset/img/Clock4.jpg"),
                           fit: BoxFit.contain,
                         ),
                       ),
@@ -283,7 +242,7 @@ class HomeScreen extends StatelessWidget {
                                 color: Colors.cyan,
                                 borderRadius: BorderRadius.circular(20)),
                             child: const Image(
-                              image: AssetImage("Asset/img/5.jpg"),
+                              image: AssetImage("Asset/img/Clock5.jpg"),
                               fit: BoxFit.contain,
                             ),
                           ),
@@ -301,7 +260,7 @@ class HomeScreen extends StatelessWidget {
                                     color: Colors.cyan,
                                     borderRadius: BorderRadius.circular(20)),
                                 child: const Image(
-                                  image: AssetImage("Asset/img/6.jpg"),
+                                  image: AssetImage("Asset/img/Clock6.jpg"),
                                   fit: BoxFit.contain,
                                 ),
                               ),
@@ -321,7 +280,6 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-//Icons class
 class CustomIconStyle extends StatelessWidget {
   const CustomIconStyle({
     Key? key,

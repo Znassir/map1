@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:map1/blanket.dart';
 import 'package:map1/pillow.dart';
+import 'Contact_us.dart';
+import 'Wall_clock.dart';
 import 'main.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
@@ -101,22 +103,22 @@ class beds extends StatelessWidget {
                               builder: (context) => const pillow()));
                     }),
                 ListTile(
-                    title: const Text("Tables"),
+                    title: const Text("Clock"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Page2()));
+                              builder: (context) => const Clock()));
                     }),
                 ListTile(
-                    title: const Text("Carpet"),
+                    title: const Text("About us"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const Address()));
+                              builder: (context) => const About_us()));
                     }),
                 ListTile(
                     title: const Text("Camera"),
