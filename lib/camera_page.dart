@@ -67,13 +67,16 @@ class _CameraPageState extends State<CameraPage> {
             child: const Text('Capture Image'),
           ),
         ),
-        if (pictureFile != null)
-          Image.network(
-            pictureFile!.path,
-            height: 200,
-          ),
-        //Android/iOS
-        // Image.file(File(pictureFile!.path)))
+        ElevatedButton(
+          onPressed: () async {
+            await availableCameras().then((value) => Navigator.push(context,
+                MaterialPageRoute(builder: (context) => const CameraPage())));
+          },
+          child: null,
+
+          //Android/iOS
+          // Image.file(File(pictureFile!.path)))
+        )
       ],
     );
   }

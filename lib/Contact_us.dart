@@ -122,15 +122,21 @@ class About_us extends StatelessWidget {
                             MaterialPageRoute(
                                 builder: (context) => const About_us()));
                       }),
-                  ListTile(
-                      title: const Text("Camera"),
-                      leading: const Icon(Icons.camera),
-                      onTap: () async {
-                        await availableCameras().then((value) => Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const CameraPage())));
-                      }),
+                  ElevatedButton(
+                    onPressed: () async {
+                      await availableCameras().then(
+                            (value) => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => CameraPage(
+                              cameras: value,
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                    child: const Text('Launch Camera'),
+                  ),
                   const SizedBox(
                     width: 110,
                     height: 110,
@@ -294,7 +300,7 @@ class About_us extends StatelessWidget {
                       Column(
                         children: [
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               const Icon(
                                 Icons.location_on_outlined,
@@ -314,7 +320,7 @@ class About_us extends StatelessWidget {
                                     width: 10,
                                   ),
                                   Text(
-                                    "ALhammra",
+                                    "Alrabwah",
                                     style: TextStyle(color: Colors.blue),
                                   )
                                 ],

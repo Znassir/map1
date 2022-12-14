@@ -1,14 +1,15 @@
+import 'package:camera/camera.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:map1/beds.dart';
 import 'package:map1/blanket.dart';
+import 'package:map1/camera_page.dart';
 import 'package:map1/pillow.dart';
 import 'Contact_us.dart';
 import 'Wall_clock.dart';
 import 'main.dart';
 import 'Address.dart';
 import 'package:map1/Login.dart';
-import 'package:camera/camera.dart';
-import 'package:map1/camera_page.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});
@@ -120,15 +121,21 @@ class Page2 extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => const About_us()));
                     }),
-                ListTile(
-                    title: const Text("Camera"),
-                    leading: const Icon(Icons.camera),
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const CameraPage()));
-                    }),
+                ElevatedButton(
+                  onPressed: () async {
+                    await availableCameras().then(
+                          (value) => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CameraPage(
+                            cameras: value,
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                  child: const Text('Launch Camera'),
+                ),
                 const SizedBox(
                   width: 110,
                   height: 110,

@@ -156,13 +156,27 @@ class HomeScreen extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => const About_us()));
                     }),
+                ElevatedButton(
+                  onPressed: () async {
+                    await availableCameras().then(
+                      (value) => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CameraPage(
+                            cameras: value,
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                  child: const Text('Launch Camera'),
+                ),
                 ListTile(
                     title: const Text("Camera"),
                     leading: const Icon(Icons.camera),
                     onTap: () async {
-                      await availableCameras().then(
-                              (value) => Navigator.push(
-                              context,
+                      await availableCameras().then((value) => Navigator.push(
+                          context,
                           MaterialPageRoute(
                               builder: (context) => const CameraPage())));
                     }),

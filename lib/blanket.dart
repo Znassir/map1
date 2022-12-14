@@ -1,3 +1,4 @@
+import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:map1/pillow.dart';
 import 'Contact_us.dart';
@@ -121,15 +122,21 @@ class blanket extends StatelessWidget {
                           MaterialPageRoute(
                               builder: (context) => const About_us()));
                     }),
-                ListTile(
-                    title: const Text("Camera"),
-                    leading: const Icon(Icons.camera),
-                    onTap: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const CameraPage()));
-                    }),
+                ElevatedButton(
+                  onPressed: () async {
+                    await availableCameras().then(
+                          (value) => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => CameraPage(
+                            cameras: value,
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                  child: const Text('Launch Camera'),
+                ),
                 const SizedBox(
                   width: 110,
                   height: 110,
