@@ -7,8 +7,8 @@ import 'package:map1/camera_page.dart';
 import 'package:map1/pillow.dart';
 import 'Contact_us.dart';
 import 'Wall_clock.dart';
-import 'maindart2.dart';
-import 'Address.dart';
+import 'Tables.dart';
+import 'Carpet.dart';
 import 'package:map1/Login.dart';
 
 Future<void> main() async {
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const SignInScreen(),
     );
   }
 }
@@ -169,17 +169,8 @@ class HomeScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: const Text('Launch Camera'),
+                  child: const Icon(Icons.camera),
                 ),
-                ListTile(
-                    title: const Text("Camera"),
-                    leading: const Icon(Icons.camera),
-                    onTap: () async {
-                      await availableCameras().then((value) => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const CameraPage())));
-                    }),
                 const SizedBox(
                   width: 110,
                   height: 110,

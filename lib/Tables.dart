@@ -8,7 +8,7 @@ import 'package:map1/pillow.dart';
 import 'Contact_us.dart';
 import 'Wall_clock.dart';
 import 'main.dart';
-import 'Address.dart';
+import 'Carpet.dart';
 import 'package:map1/Login.dart';
 
 class Page2 extends StatelessWidget {
@@ -134,7 +134,7 @@ class Page2 extends StatelessWidget {
                       ),
                     );
                   },
-                  child: const Text('Launch Camera'),
+                  child: const Icon(Icons.camera),
                 ),
                 const SizedBox(
                   width: 110,

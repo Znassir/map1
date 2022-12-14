@@ -5,10 +5,10 @@ import 'package:map1/pillow.dart';
 import 'Contact_us.dart';
 import 'Wall_clock.dart';
 import 'main.dart';
-import 'Address.dart';
+import 'Carpet.dart';
 import 'package:map1/Login.dart';
 import 'package:map1/camera_page.dart';
-import 'maindart2.dart';
+import 'Tables.dart';
 // ignore: camel_case_types
 
 class beds extends StatelessWidget {
@@ -134,7 +134,7 @@ class beds extends StatelessWidget {
                       ),
                     );
                   },
-                  child: const Text('Launch Camera'),
+                  child: const Icon(Icons.camera),
                 ),
                 const SizedBox(
                   width: 110,

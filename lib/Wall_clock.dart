@@ -4,10 +4,10 @@ import 'package:map1/Contact_us.dart';
 import 'package:map1/blanket.dart';
 import 'package:map1/pillow.dart';
 import 'main.dart';
-import 'Address.dart';
+import 'Carpet.dart';
 import 'package:map1/Login.dart';
 import 'package:map1/camera_page.dart';
-import 'maindart2.dart';
+import 'Tables.dart';
 import 'beds.dart';
 
 // ignore: camel_case_types
@@ -134,7 +134,7 @@ class Clock extends StatelessWidget {
                       ),
                     );
                   },
-                  child: const Text('Launch Camera'),
+                  child: const Icon(Icons.camera),
                 ),
                 const SizedBox(
                   width: 110,

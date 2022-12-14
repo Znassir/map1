@@ -8,7 +8,7 @@ import 'Wall_clock.dart';
 import 'main.dart';
 import 'package:map1/Login.dart';
 import 'package:map1/camera_page.dart';
-import 'maindart2.dart';
+import 'Tables.dart';
 
 class Address extends StatelessWidget {
   const Address({super.key});
@@ -133,7 +133,7 @@ class Address extends StatelessWidget {
                       ),
                     );
                   },
-                  child: const Text('Launch Camera'),
+                  child: const Icon(Icons.camera),
                 ),
                 const SizedBox(
                   width: 110,

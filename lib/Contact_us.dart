@@ -1,9 +1,9 @@
 // ignore: camel_case_types
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:map1/maindart2.dart';
+import 'package:map1/Tables.dart';
 import 'package:map1/pillow.dart';
-import 'Address.dart';
+import 'Carpet.dart';
 import 'Login.dart';
 import 'Wall_clock.dart';
 import 'beds.dart';
@@ -135,7 +135,7 @@ class About_us extends StatelessWidget {
                         ),
                       );
                     },
-                    child: const Text('Launch Camera'),
+                    child: const Icon(Icons.camera),
                   ),
                   const SizedBox(
                     width: 110,
