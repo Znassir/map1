@@ -51,7 +51,7 @@ class pillow extends StatelessWidget {
                 ),
                 ListTile(
                     title: const Text("Chairs"),
-                    leading: const Icon(Icons.person),
+                    leading: const Icon(Icons.chair),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -60,7 +60,7 @@ class pillow extends StatelessWidget {
                     }),
                 ListTile(
                     title: const Text("Tables"),
-                    leading: const Icon(Icons.person),
+                    leading: const Icon(Icons.table_bar_sharp),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -69,7 +69,7 @@ class pillow extends StatelessWidget {
                     }),
                 ListTile(
                     title: const Text("Carpet"),
-                    leading: const Icon(Icons.person),
+                    leading: const Icon(Icons.roller_shades),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -78,7 +78,7 @@ class pillow extends StatelessWidget {
                     }),
                 ListTile(
                     title: const Text("blanket"),
-                    leading: const Icon(Icons.person),
+                    leading: const Icon(Icons.bed),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -86,8 +86,8 @@ class pillow extends StatelessWidget {
                               builder: (context) => const blanket()));
                     }),
                 ListTile(
-                    title: const Text("beds"),
-                    leading: const Icon(Icons.person),
+                    title: const Text("Beds"),
+                    leading: const Icon(Icons.bed),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -96,7 +96,7 @@ class pillow extends StatelessWidget {
                     }),
                 ListTile(
                     title: const Text("pillow"),
-                    leading: const Icon(Icons.person),
+                    leading: const Icon(Icons.bed),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -105,7 +105,7 @@ class pillow extends StatelessWidget {
                     }),
                 ListTile(
                     title: const Text("Clock"),
-                    leading: const Icon(Icons.person),
+                    leading: const Icon(Icons.lock_clock),
                     onTap: () {
                       Navigator.push(
                           context,
@@ -113,7 +113,7 @@ class pillow extends StatelessWidget {
                               builder: (context) => const Clock()));
                     }),
                 ListTile(
-                    title: const Text("About us"),
+                    title: const Text("About_us"),
                     leading: const Icon(Icons.person),
                     onTap: () {
                       Navigator.push(
